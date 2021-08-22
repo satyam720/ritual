@@ -1,0 +1,77 @@
+.wrap {
+    width: 100%;
+    position: relative;
+    top: 106px;
+    h2{
+        font-size: 40px;
+    }
+
+
+    .link-effect{
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: opacity .2s ease-in-out;
+        
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+    }
+
+.floatleft {
+    float:left; 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+
+    .capsule-edit{
+        margin-top: 42px;
+        width: 571px;
+        height: 568px;
+    }
+
+    .second-part-text{
+        color:rgb(20, 43, 111);
+        position: relative;
+        top: 290px;
+        left: 25%;
+    }
+}
+
+.floatright {
+float: right;
+display: flex;
+flex-direction: column;
+    
+    height: 1440px;
+    width: 50%;
+
+    .content-wrapper{
+
+        position: absolute;
+        color: rgb(20, 43, 111);
+        top: 11%;
+        left: 60%;
+        width: 500px;
+        height: 55%;
+        overflow-y: hidden;
+        box-sizing: border-box;
+
+    }
+    .second-part-image{
+        position: relative;
+        top: 51%;
+        left: 10%;
+
+
+    }
+    
+
+}
+
+}

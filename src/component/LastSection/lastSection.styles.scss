@@ -1,0 +1,74 @@
+.wrap {
+    width: 100%;
+    position: relative;
+    top: 106px;
+    h2{
+        font-size: 40px;
+    }
+
+
+   
+        
+
+      
+        
+    
+
+.floatleft {
+    float:left; 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+
+    .capsule-edit{
+        margin-top: 42px;
+        width: 571px;
+        height: 568px;
+    }
+
+   
+}
+
+.floatright {
+float: right;
+display: flex;
+flex-direction: column;
+    
+    height: 1440px;
+    width: 50%;
+
+    .content-wrapper{
+
+        position: absolute;
+        color: rgb(20, 43, 111);
+        top: 11%;
+        left: 60%;
+        font-weight: 500;
+        width: 500px;
+        height: 55%;
+        overflow-y: hidden;
+        box-sizing: border-box;
+        p{
+            font-size: 18px;
+        }
+
+        .list-edit{
+            
+           
+            li{
+                margin-bottom: 30px;
+                font-weight: 500;
+                font-size: 18px;
+                
+                
+            }
+        }
+
+    }
+    
+    
+
+}
+
+}

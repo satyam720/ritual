@@ -1,0 +1,62 @@
+
+.banner-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   
+    img{
+        
+        height: 40%;
+        width: 95%;
+        
+    }
+    .banner-content{
+        
+        
+        position: absolute;
+        color: #142b6f;
+        font-size: 450%;
+        
+        top: 15%;
+        left: 37%;
+        
+       
+        
+        .text1{
+            
+           
+            font-weight: 500;
+            
+            margin-left: 110px;
+        }
+        .text2{
+            font-weight: 500;
+            
+        }
+        .text3{
+            margin-left: 110px;
+        }
+        .btn-edit{
+            padding: 2%;
+            background-color: #142b6f;
+            color: white;
+            position: relative;
+            left: 150px;
+            width: 35%;
+            font-size: 16px;
+            border-radius: 30px;
+            text-transform: unset !important;
+
+            &:hover{
+                background-color: #fff;
+                color: #142b6f;
+            }
+        }
+        
+        
+       
+    
+    
+    }
+}

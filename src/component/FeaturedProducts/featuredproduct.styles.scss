@@ -1,0 +1,63 @@
+.featuredproduct{
+    position: relative;
+    left: 11%;
+    top: 2%;
+    color: rgb(20, 43, 111);
+    overflow: hidden;
+    height: 550px;
+
+    .shop-link{
+        position: absolute;
+        
+        left: 77%;
+        font-size: 20px;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        
+        font-weight: 500;
+        transition: opacity .2s ease-in-out;
+        
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+
+    }
+
+    .product{
+        max-width: 85%;
+        position: relative;
+        top: 30px;
+
+        .bg-edit{
+            border-radius: 15px;
+            margin-bottom: 8%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+
+            
+           
+        }
+
+        img{
+            border-radius: 15px;
+            margin-bottom: 8%;
+        }
+
+        .text-content{
+            
+            color: rgb(20, 43, 111);
+            overflow: hidden;
+
+            .bottom-text{
+                position: relative;
+                top: 6px;
+                
+            }
+        }
+    }
+    
+}
