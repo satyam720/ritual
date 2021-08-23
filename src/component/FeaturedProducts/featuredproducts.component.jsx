@@ -4,18 +4,6 @@ import { useState } from "react";
 
 const FeaturedProducts = () => {
   const [hoverImage, setHoverImage] = useState(false);
-  
-
-
-
-
- function HandleEnter (e)  {
-    setHoverImage(true)
-    
-}
-
-
- 
 
   return (
     <div className="featuredproduct">
@@ -28,19 +16,19 @@ const FeaturedProducts = () => {
 
       <div className="row row-cols-md-4 row-cols-lg-4 product">
         {FeaturedProductsList.map((product) => (
-          <div  key={product.id} className="arrange-content">
-            <div  className="col">
-              {hoverImage ? ( 
-                (<img
+          <div key={product.id} className="arrange-content">
+            <div className="col">
+              {hoverImage ? (
+                <img
                   src={product.img2}
                   alt={product.title}
                   onMouseLeave={() => setHoverImage(false)}
                   style={{ width: "280px", height: "280px" }}
-                />)
-               ) : (
+                />
+              ) : (
                 <img
                   id={product.id}
-                  onMouseEnter={HandleEnter}
+                  onMouseEnter={() => setHoverImage(true)}
                   src={product.img1}
                   alt={product.title}
                 />
@@ -56,7 +44,9 @@ const FeaturedProducts = () => {
                 {product.subtitle}
               </span>
               <br />
-              <span className="bottom-text" style={{ opacity: "0.6"}}>{product.desc}</span>
+              <span className="bottom-text" style={{ opacity: "0.6" }}>
+                {product.desc}
+              </span>
             </div>
           </div>
         ))}

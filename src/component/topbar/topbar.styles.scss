@@ -10,7 +10,7 @@
     display: flex;
     overflow: hidden;
     
-   
+  
     
 
     .menu{
@@ -19,6 +19,16 @@
         left: 10%;
         font-weight: 500;
         cursor: pointer;
+        display: inline-block;
+        position: relative;
+        height: 60vw;
+        z-index: 10;
+
+        &:hover{
+            text-decoration: underline rgb(255, 214, 0);
+            text-underline-offset: 4px;
+            
+        }
         
     }
        
@@ -38,6 +48,12 @@
             left: 72%;
             cursor: pointer;
             font-weight: 500;
+
+            &:hover{
+                text-decoration: underline rgb(255, 214, 0);
+                text-underline-offset: 4px;
+                
+            }
         }
         .cart{
             position: relative;
@@ -45,6 +61,8 @@
             left: 74%;
             cursor: pointer;
             font-weight: 500;
+
+           
         }
       
 
